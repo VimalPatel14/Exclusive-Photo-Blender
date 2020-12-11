@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom">
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <FrameLayout
+                android:id="@+id/llAdContainer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+
+                <RelativeLayout
+                    android:id="@+id/banner_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="200.0dip"
+                    android:layout_gravity="top|center_horizontal"
+                    android:background="@drawable/banner"
+                    android:orientation="vertical"
+                    android:visibility="gone" />
+
+                <com.facebook.ads.NativeAdLayout
+                    android:id="@+id/native_ad_container"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|center_horizontal"
+                    android:orientation="vertical" />
+            </FrameLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      android:layout_centerInParent="true"
+        android:src="@drawable/splashlogo"/>
+
+
+
+    <RelativeLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/addlay"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:id="@+id/gallery"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/round">
+
+                        <ImageView
+                            android:layout_centerInParent="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_start" />
+                    </RelativeLayout>
+
+
+                    <TextView
+                        android:id="@+id/starttxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Start"
+                        android:layout_marginTop="5dp"
+                        android:textSize="20sp"
+                        android:textColor="@color/white"/>
+
+
+
+                </LinearLayout>
+
+
+
+
+
+                <LinearLayout
+                    android:id="@+id/btn_mycreation"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/roundcreation">
+
+                        <ImageView
+                            android:layout_centerInParent="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_work" />
+                    </RelativeLayout>
+
+
+                    <TextView
+                        android:id="@+id/worktxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="My Work"
+                        android:layout_marginTop="5dp"
+                        android:textSize="20sp"
+                        android:textColor="@color/white"/>
+
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/addlay"
+            android:layout_width="match_parent"
+            android:layout_height="104dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/ads_outline"
+            android:gravity="center">
+
+            <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/adView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:visibility="visible"
+                ads:adSize="320x100"
+                ads:adUnitId="@string/banner_footer">
+
+            </com.google.android.gms.ads.AdView>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

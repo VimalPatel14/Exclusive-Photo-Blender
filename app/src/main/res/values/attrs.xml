@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <declare-styleable name="ScaleCardLayout">
+        <attr name="aspectRatioWidth" format="float" />
+        <attr name="aspectRatioHeight" format="float" />
+    </declare-styleable>
+
+
+
+
+
+    <declare-styleable name="ExclusiveBlender_CustomTextView">
+        <attr name="customFont" format="string" />
+    </declare-styleable>
+</resources>
