@@ -1,4 +1,2 @@
-# Exclusive-Photo-Blender
-# Play Store App
+The application is available on Play Store: <a href="https://play.google.com/store/apps/details?id=com.photovideoeditormaker.exclusivephotoblender" >Exclusive Photo Blender Effect</a>
 
-https://play.google.com/store/apps/details?id=com.photovideoeditormaker.exclusivephotoblender
