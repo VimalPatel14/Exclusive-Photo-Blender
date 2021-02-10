@@ -2,7 +2,7 @@
 
 Download From Play Store: <a href="https://play.google.com/store/apps/details?id=com.photovideoeditormaker.exclusivephotoblender" >Exclusive Photo Blender Effect</a>
 
-# Preview Image
+# Preview Images
 
 ![SC1](https://play-lh.googleusercontent.com/YlbeB8Pa5jaNYTVhNaGp6vMaIzAer2bGnCCQoXsRGQpzKE_NcJ_eqEUgfCYUlLO1NaI=w720-h310-rw)
 
